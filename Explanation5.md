@@ -45,6 +45,7 @@ following figure illustrates a high-level view of this process.
 This architecture has two variants:
 
 1. EvolveGCN-H, where the recurrent neural network considers both the previous GCN parameters
-and the current node embeddings
-2. EvolveGCN-O, where the recurrent neural network only considers the previous GCN parameters
+and the current node embeddings.
+
+3. EvolveGCN-O, where the recurrent neural network only considers the previous GCN parameters
 
