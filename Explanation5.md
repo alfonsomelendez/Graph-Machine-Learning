@@ -49,3 +49,13 @@ and the current node embeddings.
 
 3. EvolveGCN-O, where the recurrent neural network only considers the previous GCN parameters
 
+## Implementing EvolveGCN
+
+
+In this section, we want to forecast web traffic on a static graph with a temporal signal. The WikiMaths
+dataset is comprised of 1,068 articles represented as nodes. Node features correspond to the past daily
+number of visits (eight features by default). Edges are weighted, and weights represent the number of
+links from the source page to the destination page. We want to predict the daily user visits to these
+Wikipedia pages between March 16, 2019, and March 15, 2021, which results in 731 snapshots. Each
+snapshot is a graph describing the state of the system at a certain time.
+
