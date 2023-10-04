@@ -73,4 +73,5 @@ pip install torch-geometric-temporal==0.54.0
 2. We import the WikiMaths dataset, called WikiMathDatasetLoader, a temporal-aware
 train-test split with temporal_signal_split, and our GNN layer, EvolveGCNH:
 
+![](Figure5-3.PNG)
 
