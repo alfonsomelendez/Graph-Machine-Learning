@@ -15,3 +15,9 @@ representing the nodes of the original graph, are plotted.
 The result is shown in the following figure:
 
 ![](Figure1-2.PNG)
+
+it is easy to see that nodes that have a similar structure are close to each
+other and are distant from nodes that have dissimilar structures. It is also interesting
+to observe how good Node2Vec is at discriminating group 1 from group 3. Since the
+algorithm uses neighboring information of each node to generate the representation, the
+clear discrimination of those two groups is possible.
