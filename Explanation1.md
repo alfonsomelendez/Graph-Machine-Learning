@@ -56,6 +56,7 @@ generate the embedding representation on a set of graphs:
 
 
 
+![](Figure1-5.PNG)
 
 
 
@@ -71,6 +72,7 @@ The results of this example are the following:
 
 
 
+![](Figure1-6.PNG)
 
 
 
