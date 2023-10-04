@@ -1,161 +1,33 @@
-# Graph Machine learning
+# Explanation 5
+
+## Introducing dynamic graphs
+
+Dynamic graphs and temporal GNNs unlock a variety of new applications, such as transport and web
+traffic forecasting, motion classification, epidemiological forecasting, link prediction, power system
+forecasting, and so on. Time series forecasting is particularly popular with this kind of graph, as we
+can use historical data to predict the system’s future behavior.
+In this chapter, we focus on graphs with a temporal component. They can be divided into two categories:
+• Static graphs with temporal signals: The underlying graph does not change, but features and
+labels evolve over time.
+• Dynamic graphs with temporal signals: The topology of the graph (the presence of nodes
+and edges), features, and labels evolve over time.
+In the first case, the graph’s topology is static. For example, it can represent a network of cities within
+a country for traffic forecasting: features change over time, but the connections stay the same.
+In the second option, nodes and/or connections are dynamic. It is useful to represent a social network
+where links between users can appear or disappear over time. This variant is more general, but also
+harder to learn how to implement.
+we will see how to handle these two types of graphs with temporal signals
+using PyTorch Geometric Temporal.
+
+## Forecasting web traffic
+
+we will predict the traffic of Wikipedia articles (as an example of a static graph with a
+temporal signal) using a temporal GNN. This regression task has already been covered in Chapter 6,
+Introducing Graph Convolutional Networks. However, in that version of the task, we performed traffic
+forecasting using a static dataset without a temporal signal: our model did not have any information
+about previous instances. This is an issue because it could not understand whether the traffic was
+currently increasing or decreasing, for example. We can now improve this model to include information
+about past instances.
+We will first introduce the temporal GNN architecture with its two variants and then implement it
+using PyTorch Geometric Temporal.
 
-Machine learning is a subset of artificial intelligence that aims to provide systems with the
-ability to learn and improve from data. It has achieved impressive results in many different
-applications, especially where it is difficult or unfeasible to explicitly define rules to solve
-a specific task. For instance, we can train algorithms to recognize spam emails, translate
-sentences into other languages, recognize objects in an image, and so on.
-In recent years, there has been an increasing interest in applying machine learning to
-graph-structured data. Here, the primary objective is to automatically learn suitable
-representations to make predictions, discover new patterns, and understand complex
-dynamics in a better manner with respect to "traditional" machine learning approaches.
-
-# The Project
-
-#  Graph Machine Learning Personal Web Page
-## Alfonso Meléndez 2023-2
-
-
-## Excelente
-
-[Video Hamilton Representation Learning](https://www.youtube.com/watch?v=fbRDfhNrCwo&t=2197s)<br>
-
-## Ejemplos curso GNN DeepFindR 
-
-[Ejemplo temporal network Traffic PyTorch](https://www.youtube.com/watch?v=Rws9mf1aWUs&list=PLV8yxwGOxvvoNkzPfCx2i8an--Tkt7O8Z&index=19)<br>
-
-[Ejemplo temporal network Fraud Detection](https://www.youtube.com/watch?v=MZGuz-o7Fl0&list=PLV8yxwGOxvvoNkzPfCx2i8an--Tkt7O8Z&index=20)<br>
-
-[Ejemplo fake news detection](https://www.youtube.com/watch?v=QAIVFr24FrA&list=PLV8yxwGOxvvoNkzPfCx2i8an--Tkt7O8Z&index=21)<br>
-
-[Ejemplo Recommender Systems](https://www.youtube.com/watch?v=NyNqzDKcKG4&list=PLV8yxwGOxvvoNkzPfCx2i8an--Tkt7O8Z&index=22)<br>
-
-## Temporal Graph Networks
-
-[Emmanuel Rossi Bronstein Blog Deep learning in Dynamic graphs](https://blog.twitter.com/engineering/en_us/topics/insights/2021/temporal-graph-networks)<br>
-
-[TGN: Temporal graph networks (Libreria)](https://github.com/twitter-research/tgn)<br>
-[Inductive representation Learning in Temporal Graphs](https://github.com/StatsDLMathsRecomSys/Inductive-representation-learning-on-temporal-graphs)<br>
-[Temporal networks in Gephi](https://www.youtube.com/watch?v=W6RzekieOgM&list=PLwbiwzlYiabrLw9zkfs55oD8J-rp-0IUu)
-
-## Recursos Excelentes
-
-[Graph Neural Networks (GNNs) Study Guide GITHUB](https://github.com/dair-ai/GNNs-Recipe)<br>
-
-[awesome compilation, to go further with research](https://github.com/GRAND-Lab/Awesome-Graph-Neural-Networks)<br>
-[Demystifying Graph based Machine Learning](https://medium.com/mlearning-ai/demystifying-graph-based-machine-learning-ed6b6b7c4081)<br>
-
-[Neptune Graph neural networks](https://neptune.ai/blog/graph-neural-network-and-some-of-gnn-applications)
-
-## Cursos en Línea
-
-[Curso Completo  Graph neural Networks DeepFindR](https://www.youtube.com/watch?v=fOctJB4kVlM&list=PLV8yxwGOxvvoNkzPfCx2i8an--Tkt7O8Z)
-
-[Udemy Graph neural Networks](https://www.udemy.com/course/graph-neural-network/)<br>
-
-[mlabonne Github Course Graph neural networks](https://github.com/mlabonne/graph-neural-network-course)<br>
-
-[Geometric Deep Learning Michael Bronstein ](https://www.youtube.com/playlist?list=PLn2-dEmQeTfSLXW8yXP4q_Ii58wFdxb3C)<br>
-
-[Penn University Machine learning onGraphs](https://www.youtube.com/watch?v=90lWiGEHTn4&list=PL-BLJBpGQyLOBRhqEry2rsibv14hH5A2u)<br>
-
-
-[Machine leaning with Graphs 2024 Stanford](https://online.stanford.edu/courses/xcs224w-machine-learning-graphs)<br>
-
-[Jure Leskovec](https://www.youtube.com/watch?v=JAB_plj2rbA&list=PLoROMvodv4rPLKxIpqhjhPgdQy7imNkDn&index=2&t=2s)<br>
-
-[Mcgills Graph Representation Learning](https://cs.mcgill.ca/~wlh/comp766/)
-
-
-#### Machine Learning
-
-[Curso Machine Learning Mustafá](https://work.caltech.edu/lectures.html#lectures)<br><br>
-
-
-
-
-### Overviews
-
-[GML an Overview](https://towardsdatascience.com/graph-machine-learning-an-overview-c996e53fab90)<br>
-
-[Overview Hugging Face](https://huggingface.co/blog/intro-graphml)<br>
-
-[Graphs Everywhere !!Para Mirar!!](https://engineering.rappi.com/graphs-everywhere-an-introduction-to-graph-ml-f0a3d5893cb8)
-
-[A Gentle Introduction to graph neural networks](https://distill.pub/2021/gnn-intro/)<br>
-
-[How to get started with GML](https://gordicaleksa.medium.com/how-to-get-started-with-graph-machine-learning-afa53f6f963a)<br>
-
-[AI Trends in 2023: Graph Neural Networks](https://www.assemblyai.com/blog/ai-trends-graph-neural-networks/)
-
-## Artículos
-
-[Distill Artículo Interactivo](https://distill.pub/2021/gnn-intro/)<br>
-
-
-
-
-
-
-
-
-
-### Videos
-
-
-[Excelente Video GNN Divulgativo](https://www.youtube.com/watch?v=GXhBEj1ZtE8)<br>
-
-GNN for beginners:
-
-[Video 1](https://www.youtube.com/watch?v=YdGN-J322y4)
-[Video 2](https://www.youtube.com/watch?v=VDzrvhgyxsU&t=3145s)
-
-
-[Neural Nine Simple Embedding karate Club](https://www.youtube.com/watch?v=uszt88Z-0Fc&t=22s)<br>
-
-[Everything is connected Deep leraning on Graphs peter Lekovic](https://www.youtube.com/watch?v=5h6MbQ_65-o&t=1655s)<br>
-
-
-[Petar Veličković's GNN video]( https://youtu.be/8owQBFAHw7E)<br>
-
-[Michael Bronstein's Geometric Deep Learning keynote speech (beautiful!)](https://youtu.be/w6Pw4MOzMuo)<br>
-
-[Xavier Bresson's Graph Convolutional Networks lecture](https://youtu.be/Iiv9R6BjxH)<br>
-
-[3Blue1Brown’s series on Neural Networks](https://youtu.be/aircAruvnKk)<br>
-
-### Resources
-
-[Petar resources](https://goo.gle/3cO7gvb)<br>
-
-
-
-### Librerias
-
-1. [ Huggingface Library RGCN](https://huggingface.co/riship-nv/RGCN)<br>
-
-<br>
-
-
-
-
-### Blogs<br>
-Reference blog posts about GNNs:<br>
-
-[Michael Bronstein](https://towardsdatascience.com/geomet...) (a must-read)<br>
-
-[aa](https://towardsdatascience.com/do-we-...)<br>
-
-[Amal Menzli](https://neptune.ai/blog/graph-neural-...)<br>
-
-[Eric J. Ma](https://ericmjl.github.io/essays-on-d... )<br>
-
-[Rishabh Anand](https://medium.com/dair-ai/an-illustr...)<br>
-
-[Distill 1](https://distill.pub/2021/gnn-intro/)<br>
-
-[Distill 2](https://distill.pub/2021/understandin...)<br>
-
-
-
-[Int to graph machine learning Oracle](https://www.youtube.com/watch?v=ZdDwN1cUEck)<br>
