@@ -52,10 +52,25 @@ and the current node embeddings.
 ## Implementing EvolveGCN
 
 
-In this section, we want to forecast web traffic on a static graph with a temporal signal. The WikiMaths
+We want to forecast web traffic on a static graph with a temporal signal. The WikiMaths
 dataset is comprised of 1,068 articles represented as nodes. Node features correspond to the past daily
 number of visits (eight features by default). Edges are weighted, and weights represent the number of
 links from the source page to the destination page. We want to predict the daily user visits to these
 Wikipedia pages between March 16, 2019, and March 15, 2021, which results in 731 snapshots. Each
 snapshot is a graph describing the state of the system at a certain time.
+
+![](Figure5-2.PNG)
+
+
+PyTorch Geometric does not natively support static or dynamic graphs with a temporal signal.
+Fortunately, an extension called PyTorch Geometric Temporal [2] fixes this issue and even implements
+various temporal GNN layers. The WikiMaths dataset was also made public during the development
+of PyTorch Geometric Temporal. In this chapter, we will use this library to simplify the code and
+focus on applications:
+
+1. We need to install this library in an environment containing PyTorch Geometric:
+pip install torch-geometric-temporal==0.54.0
+2. We import the WikiMaths dataset, called WikiMathDatasetLoader, a temporal-aware
+train-test split with temporal_signal_split, and our GNN layer, EvolveGCNH:
+
 
