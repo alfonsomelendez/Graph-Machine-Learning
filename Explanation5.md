@@ -31,3 +31,19 @@ about past instances.
 We will first introduce the temporal GNN architecture with its two variants and then implement it
 using PyTorch Geometric Temporal.
 
+## Introducing EvolveGCN
+
+For this task, we will use the EvolveGCN architecture. Introduced by Pareja et al. [1] in 2019, it proposes
+a natural combination of GNNs and Recurrent Neural Networks (RNNs). Previous approaches,
+such as graph convolutional recurrent networks, applied RNNs with graph convolution operators to
+calculate node embeddings. By contrast, EvolveGCN applies RNNs to the GCN parameters themselves.
+As the name implies, the GCN evolves over time to produce relevant temporal node embeddings. The
+following figure illustrates a high-level view of this process.
+
+![](Figure5-1.PNG)
+
+This architecture has two variants:
+• EvolveGCN-H, where the recurrent neural network considers both the previous GCN parameters
+and the current node embeddings
+• EvolveGCN-O, where the recurrent neural network only considers the previous GCN parameters
+
