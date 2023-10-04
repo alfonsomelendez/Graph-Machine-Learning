@@ -75,3 +75,41 @@ train-test split with temporal_signal_split, and our GNN layer, EvolveGCNH:
 
 ![](Figure5-3.PNG)
 
+3. We load the WikiMaths dataset, which is a StaticGraphTemporalSignal object. In
+this object, dataset[0] describes the graph (also called a snapshot in this context) at = 0
+and dataset[500] at = 500 . We also create a train-test split with a ratio of 0.5. The
+training set is composed of snapshots from the earlier time periods, while the test set regroups
+snapshots from the later periods:
+
+
+![](Figure5-4.PNG)
+
+
+
+
+4. The graph is static, so the node and edge dimensions do not change. However, the values contained
+in these tensors are different. It is difficult to visualize the values of each of the 1,068 nodes. To
+better understand this dataset, we can calculate the mean and standard deviation values for each
+snapshot instead. The moving average is also helpful in smoothing out short-term fluctuations.
+
+![](Figure5-5.PNG)
+
+
+
+
+5. We plot these time series with matplotlib to visualize our task:
+
+
+![](Figure5-6.PNG)
+![](Figure5-65.PNG)
+
+
+
+This produces the following figure:
+
+![](Figure5-7.PNG)
+
+
+
+
+
