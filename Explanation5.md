@@ -110,6 +110,71 @@ This produces the following figure:
 ![](Figure5-7.PNG)
 
 
+Our data presents periodic patterns that the temporal GNN can hopefully learn. We can now
+implement it and see how it performs.
+6. The temporal GNN takes two parameters as inputs: the number of nodes (node_count) and
+the input dimension (dim_in). The GNN only has two layers: an EvolveGCN-H layer and a
+linear layer that outputs a predicted value for each node:
+
+![](Figure5-8.PNG)
+
+
+7. The forward() function applies both layers to the input with a ReLU activation function:
+
+![](Figure5-9.PNG)
+
+
+8. We create an instance of TemporalGNN and give it the number of nodes and input dimension
+9.  from the WikiMaths dataset. We will train it using the Adam optimizer:
+
+
+![](Figure5-10.PNG)
+
+
+9. We can print the model to observe the layers contained in EvolveGCNH:
+
+![](Figure5-11.PNG)
+
+We see three layers: TopKPooling, which summarizes the input matrix in eight columns;
+GRU, which updates the GCN weight matrix; and GCNConv, which produces the new node
+embedding. Finally, a linear layer outputs a predicted value for every node in the graph.
+
+10. We create a training loop that trains the model on every snapshot from the training set. The
+loss is backpropagated for every snapshot:
+
+![](Figure5-12.PNG)
+
+11. Likewise, we evaluate the model on the test set. The MSE is averaged on the entire test set to
+produce the final score:
+
+![](Figure5-13.PNG)
+
+
+12. We obtain a loss value of 0.7559. Next, we will plot the mean values predicted by our model on
+the previous graph to interpret it. The process is straightforward: we must average the predictions
+and store them in a list. Then, we can add them to the previous plot:
+
+![](Figure5-14.PNG)
+
+We obtain the following:
+
+![](Figure5-15.PNG)
+
+We can see that the predicted values follow the general trend in the data. This is an excellent
+result, considering the limited size of the dataset.
+
+13. Finally, let’s create a scatter plot to show how predicted and ground truth values differ for a
+single snapshot:
+
+![](Figure5-16.PNG)
+
+![](Figure5-17.PNG)
+
+We observe a moderate positive correlation between predicted and real values. Our model is not
+remarkably accurate, but the previous figure showed that it understands the periodic nature of the
+data very well.
+
+
 
 
 
