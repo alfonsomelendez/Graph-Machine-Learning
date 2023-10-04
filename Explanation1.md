@@ -41,3 +41,46 @@ The results are shown in the following figure:
 
 ![](Figure1-4.PNG)
 
+From the figure, it is easy to see that the edge embedding algorithm clearly
+identifies similar edges. As expected, edges belonging to groups 1, 2, and 3 are clustered in
+well-defined and well-grouped regions. Moreover, the (6,7) and (10,11) edges, belonging
+to groups 4 and 5, respectively, are well clustered in specific groups.
+
+
+
+Finally, we will provide an example of a Graph to Vector (Grap2Vec) embedding
+algorithm. This algorithm maps a single graph in a vector. As for another example, we
+will discuss this algorithm in more detail in the next chapter. In the following code block,
+we provide a Python example showing how to use the Graph2Vec algorithm in order to
+generate the embedding representation on a set of graphs:
+
+
+
+
+
+
+
+In this example, the following has been done:
+1. 20 Watts-Strogatz graphs (described in the previous chapter) have been generated
+with random parameters.
+2. We have then executed the graph embedding algorithm in order to generate a
+two-dimensional vector representation of each graph.
+3. Finally, the generated vectors are plotted in their Euclidean space.
+The results of this example are the following:
+
+
+
+
+
+
+
+
+
+graphs with a large Euclidean distance, such as graph 12
+and graph 8, have a different structure. The former is generated with the nx.watts_
+strogatz_graph(20,20,0.2857) parameter and the latter with the nx.watts_
+strogatz_graph(13,6,0.8621) parameter. In contrast, a graph with a low
+Euclidean distance, such as graph 14 and graph 8, has a similar structure. Graph 14 is
+generated with the nx.watts_strogatz_graph(9,9,0.5091) command, while
+graph 4 is generated with nx.watts_strogatz_graph(10,5,0.5659).
+
