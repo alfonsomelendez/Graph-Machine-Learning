@@ -9,3 +9,5 @@ In recent years, there has been an increasing interest in applying machine learn
 graph-structured data. Here, the primary objective is to automatically learn suitable
 representations to make predictions, discover new patterns, and understand complex
 dynamics in a better manner with respect to "traditional" machine learning approaches.
+
+# The Project
