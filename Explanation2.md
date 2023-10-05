@@ -21,6 +21,6 @@ download it with the following Python code:
 ratings made by users, and the second one allows us to translate movie identifiers into titles.
 3. Let’s see what they look like by importing them with pandas using pd.read_csv():
 
- ![](./Imagenes/Ejemplo2/Ej2Figure-2.PNG)
+![](./Imagenes/Ejemplo2/Ej2Figure-2.PNG)
 
 ![](./Imagenes/Ejemplo2/Ej2Figure-3.PNG)
