@@ -16,3 +16,11 @@ the latest dataset (09/2018) comprising 100,836 ratings, 9,742 movies, and 610 u
 download it with the following Python code:
 
 ![](./Imagenes/Ejemplo2/Ej2Figure-1.PNG)
+
+2. We are interested in two files: ratings.csv and movies.csv. The first one stores all the
+ratings made by users, and the second one allows us to translate movie identifiers into titles.
+3. Let’s see what they look like by importing them with pandas using pd.read_csv():
+
+ ![](./Imagenes/Ejemplo2/Ej2Figure-2.PNG)
+
+![](./Imagenes/Ejemplo2/Ej2Figure-3.PNG)
