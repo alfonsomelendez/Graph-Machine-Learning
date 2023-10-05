@@ -10,35 +10,24 @@ graph-structured data. Here, the primary objective is to automatically learn sui
 representations to make predictions, discover new patterns, and understand complex
 dynamics in a better manner with respect to "traditional" machine learning approaches.
 
-# The Project
-
-#  Graph Machine Learning Personal Web Page
-## Alfonso Meléndez 2023-2
+# General Information about Graph Machine Learning
 
 
-## Excelente
 
-[Video Hamilton Representation Learning](https://www.youtube.com/watch?v=fbRDfhNrCwo&t=2197s)<br>
 
-## Ejemplos curso GNN DeepFindR 
+## Páginas Web
 
-[Ejemplo temporal network Traffic PyTorch](https://www.youtube.com/watch?v=Rws9mf1aWUs&list=PLV8yxwGOxvvoNkzPfCx2i8an--Tkt7O8Z&index=19)<br>
+[GML an Overview](https://towardsdatascience.com/graph-machine-learning-an-overview-c996e53fab90)<br>
 
-[Ejemplo temporal network Fraud Detection](https://www.youtube.com/watch?v=MZGuz-o7Fl0&list=PLV8yxwGOxvvoNkzPfCx2i8an--Tkt7O8Z&index=20)<br>
+[Overview Hugging Face](https://huggingface.co/blog/intro-graphml)<br>
 
-[Ejemplo fake news detection](https://www.youtube.com/watch?v=QAIVFr24FrA&list=PLV8yxwGOxvvoNkzPfCx2i8an--Tkt7O8Z&index=21)<br>
+[Graphs Everywhere !!Para Mirar!!](https://engineering.rappi.com/graphs-everywhere-an-introduction-to-graph-ml-f0a3d5893cb8)
 
-[Ejemplo Recommender Systems](https://www.youtube.com/watch?v=NyNqzDKcKG4&list=PLV8yxwGOxvvoNkzPfCx2i8an--Tkt7O8Z&index=22)<br>
+[A Gentle Introduction to graph neural networks](https://distill.pub/2021/gnn-intro/)<br>
 
-## Temporal Graph Networks
+[How to get started with GML](https://gordicaleksa.medium.com/how-to-get-started-with-graph-machine-learning-afa53f6f963a)<br>
 
-[Emmanuel Rossi Bronstein Blog Deep learning in Dynamic graphs](https://blog.twitter.com/engineering/en_us/topics/insights/2021/temporal-graph-networks)<br>
-
-[TGN: Temporal graph networks (Libreria)](https://github.com/twitter-research/tgn)<br>
-[Inductive representation Learning in Temporal Graphs](https://github.com/StatsDLMathsRecomSys/Inductive-representation-learning-on-temporal-graphs)<br>
-[Temporal networks in Gephi](https://www.youtube.com/watch?v=W6RzekieOgM&list=PLwbiwzlYiabrLw9zkfs55oD8J-rp-0IUu)
-
-## Recursos Excelentes
+[AI Trends in 2023: Graph Neural Networks](https://www.assemblyai.com/blog/ai-trends-graph-neural-networks/)
 
 [Graph Neural Networks (GNNs) Study Guide GITHUB](https://github.com/dair-ai/GNNs-Recipe)<br>
 
@@ -48,6 +37,9 @@ dynamics in a better manner with respect to "traditional" machine learning appro
 [Neptune Graph neural networks](https://neptune.ai/blog/graph-neural-network-and-some-of-gnn-applications)
 
 ## Cursos en Línea
+
+[Mandarin 2023](https://www.youtube.com/playlist?list=PLH-G21fz8AE1XgwfH5YPMealh6td1LMuh)<br>
+
 
 [Curso Completo  Graph neural Networks DeepFindR](https://www.youtube.com/watch?v=fOctJB4kVlM&list=PLV8yxwGOxvvoNkzPfCx2i8an--Tkt7O8Z)
 
@@ -64,46 +56,18 @@ dynamics in a better manner with respect to "traditional" machine learning appro
 
 [Jure Leskovec](https://www.youtube.com/watch?v=JAB_plj2rbA&list=PLoROMvodv4rPLKxIpqhjhPgdQy7imNkDn&index=2&t=2s)<br>
 
-[Mcgills Graph Representation Learning](https://cs.mcgill.ca/~wlh/comp766/)
-
-
-#### Machine Learning
-
-[Curso Machine Learning Mustafá](https://work.caltech.edu/lectures.html#lectures)<br><br>
+[Mcgills Graph Representation Learning](https://cs.mcgill.ca/~wlh/comp766/)<br>
 
 
 
-
-### Overviews
-
-[GML an Overview](https://towardsdatascience.com/graph-machine-learning-an-overview-c996e53fab90)<br>
-
-[Overview Hugging Face](https://huggingface.co/blog/intro-graphml)<br>
-
-[Graphs Everywhere !!Para Mirar!!](https://engineering.rappi.com/graphs-everywhere-an-introduction-to-graph-ml-f0a3d5893cb8)
-
-[A Gentle Introduction to graph neural networks](https://distill.pub/2021/gnn-intro/)<br>
-
-[How to get started with GML](https://gordicaleksa.medium.com/how-to-get-started-with-graph-machine-learning-afa53f6f963a)<br>
-
-[AI Trends in 2023: Graph Neural Networks](https://www.assemblyai.com/blog/ai-trends-graph-neural-networks/)
-
-## Artículos
-
-[Distill Artículo Interactivo](https://distill.pub/2021/gnn-intro/)<br>
+## Videos
 
 
-
-
-
-
-
-
-
-### Videos
-
+[ Hamilton Representation Learning](https://www.youtube.com/watch?v=fbRDfhNrCwo&t=2197s)<br>
 
 [Excelente Video GNN Divulgativo](https://www.youtube.com/watch?v=GXhBEj1ZtE8)<br>
+
+[Int to graph machine learning Oracle](https://www.youtube.com/watch?v=ZdDwN1cUEck)<br>
 
 GNN for beginners:
 
@@ -124,23 +88,14 @@ GNN for beginners:
 
 [3Blue1Brown’s series on Neural Networks](https://youtu.be/aircAruvnKk)<br>
 
-### Resources
+
+
+
+## Blogs<br>
 
 [Petar resources](https://goo.gle/3cO7gvb)<br>
 
 
-
-### Librerias
-
-1. [ Huggingface Library RGCN](https://huggingface.co/riship-nv/RGCN)<br>
-
-<br>
-
-
-
-
-### Blogs<br>
-Reference blog posts about GNNs:<br>
 
 [Michael Bronstein](https://towardsdatascience.com/geomet...) (a must-read)<br>
 
@@ -157,5 +112,22 @@ Reference blog posts about GNNs:<br>
 [Distill 2](https://distill.pub/2021/understandin...)<br>
 
 
+## Adicional Temporal Graph Networks
 
-[Int to graph machine learning Oracle](https://www.youtube.com/watch?v=ZdDwN1cUEck)<br>
+### Ejemplos curso GNN DeepFindR 
+
+[Ejemplo temporal network Traffic PyTorch](https://www.youtube.com/watch?v=Rws9mf1aWUs&list=PLV8yxwGOxvvoNkzPfCx2i8an--Tkt7O8Z&index=19)<br>
+
+[Ejemplo temporal network Fraud Detection](https://www.youtube.com/watch?v=MZGuz-o7Fl0&list=PLV8yxwGOxvvoNkzPfCx2i8an--Tkt7O8Z&index=20)<br>
+
+[Ejemplo fake news detection](https://www.youtube.com/watch?v=QAIVFr24FrA&list=PLV8yxwGOxvvoNkzPfCx2i8an--Tkt7O8Z&index=21)<br>
+
+[Ejemplo Recommender Systems](https://www.youtube.com/watch?v=NyNqzDKcKG4&list=PLV8yxwGOxvvoNkzPfCx2i8an--Tkt7O8Z&index=22)<br>
+
+
+[Emmanuel Rossi Bronstein Blog Deep learning in Dynamic graphs](https://blog.twitter.com/engineering/en_us/topics/insights/2021/temporal-graph-networks)<br>
+
+[TGN: Temporal graph networks (Libreria)](https://github.com/twitter-research/tgn)<br>
+[Inductive representation Learning in Temporal Graphs](https://github.com/StatsDLMathsRecomSys/Inductive-representation-learning-on-temporal-graphs)<br>
+[Temporal networks in Gephi](https://www.youtube.com/watch?v=W6RzekieOgM&list=PLwbiwzlYiabrLw9zkfs55oD8J-rp-0IUu)
+
