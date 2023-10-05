@@ -10,3 +10,7 @@ Another approach is to look at user ratings. There are different techniques to b
 ratings: bipartite graphs, edges based on pointwise mutual information, and so on. In this section, we’ll
 implement a simple and intuitive approach: movies that are liked by the same users are connected.
 We’ll then use this graph to learn movie embeddings using Node2Vec:
+
+1. First, let’s download a dataset. MovieLens [2] is a popular choice, with a small version of
+the latest dataset (09/2018) comprising 100,836 ratings, 9,742 movies, and 610 users. We can
+download it with the following Python code:
