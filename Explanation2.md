@@ -15,4 +15,4 @@ We’ll then use this graph to learn movie embeddings using Node2Vec:
 the latest dataset (09/2018) comprising 100,836 ratings, 9,742 movies, and 610 users. We can
 download it with the following Python code:
 
-![](Imagenes/Ejemplo2/Ej2Figure-1.PNG)
+![](./Imagenes/Ejemplo2/Ej2Figure-1.PNG)
