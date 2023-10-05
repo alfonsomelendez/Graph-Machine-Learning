@@ -45,10 +45,22 @@ ratings made by users, and the second one allows us to translate movie identifie
 10.  Here, we want to see movies that have been liked by the same users. This means that ratings
 such as 1, 2, and 3 are not very relevant. We can discard those and only keep scores of 4 and 5:
 
-11. This gives us the following output:
-12. We now have 48,580 ratings made by 610 users. The next step is to count every time that two
+![](./Imagenes/Ejemplo2/Ej2Figure-10.PNG)
+
+
+12. This gives us the following output:
+
+    ![](./Imagenes/Ejemplo2/Ej2Figure-12.PNG)
+
+14. We now have 48,580 ratings made by 610 users. The next step is to count every time that two
 movies are liked by the same user. We will repeat this process for every user in the dataset.
 
-13. To simplify things, we will use a defaultdict data structure, which automatically creates
+![](./Imagenes/Ejemplo2/Ej2Figure-14.PNG)
+
+
+16. To simplify things, we will use a defaultdict data structure, which automatically creates
 missing entries instead of raising an error. We’ll use this structure to count movies that are
 liked together:
+
+![](./Imagenes/Ejemplo2/Ej2Figure-16.PNG)
+
