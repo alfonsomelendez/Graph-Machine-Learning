@@ -14,3 +14,5 @@ We’ll then use this graph to learn movie embeddings using Node2Vec:
 1. First, let’s download a dataset. MovieLens [2] is a popular choice, with a small version of
 the latest dataset (09/2018) comprising 100,836 ratings, 9,742 movies, and 610 users. We can
 download it with the following Python code:
+
+![](Imagenes/Ejemplo2/Ej2
