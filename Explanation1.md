@@ -14,7 +14,7 @@ representing the nodes of the original graph, are plotted.
 
 The result is shown in the following figure:
 
-![](Figure1-2.PNG)
+![](./Imagenes/Figure1-2.PNG)
 
 it is easy to see that nodes that have a similar structure are close to each
 other and are distant from nodes that have dissimilar structures. It is also interesting
@@ -26,7 +26,7 @@ Another example on the same graph can be performed using the Edge to Vector
 (Edge2Vec) algorithm in order to generate a mapping for the edges for the same graph, G:
 
 
-![](Figure1-3.PNG)
+![](./Imagenes/Figure1-3.PNG)
 
 
 
@@ -39,7 +39,7 @@ edge of the graph in a vector of two dimensions.
 representing the nodes of the original graph, are plotted.
 The results are shown in the following figure:
 
-![](Figure1-4.PNG)
+![](./Imagenes/Figure1-4.PNG)
 
 From the figure, it is easy to see that the edge embedding algorithm clearly
 identifies similar edges. As expected, edges belonging to groups 1, 2, and 3 are clustered in
@@ -56,7 +56,7 @@ generate the embedding representation on a set of graphs:
 
 
 
-![](Figure1-5.PNG)
+![](./Imagenes/Figure1-5.PNG)
 
 
 
@@ -72,7 +72,7 @@ The results of this example are the following:
 
 
 
-![](Figure1-6.PNG)
+![](./Imagenes/Figure1-6.PNG)
 
 
 
