@@ -20,61 +20,6 @@ dynamics in a better manner with respect to "traditional" machine learning appro
 | 4. Graph Isomorphism Network                             | Maximize the power of the GNN for graph classification on PROTEINS. | [Article](https://mlabonne.github.io/blog/gin/)  | <a href="https://colab.research.google.com/drive/1b6SWugNKnxsI0L9auX1zwszlXf3rRZyS?usp=sharing"><img src="images/colab.svg" alt="Open In Colab"></a> |
 
 
-## Páginas Web
-
-[GML an Overview](https://towardsdatascience.com/graph-machine-learning-an-overview-c996e53fab90)<br>
-
-[Overview Hugging Face](https://huggingface.co/blog/intro-graphml)<br>
-
-[Graphs Everywhere !!Para Mirar!!](https://engineering.rappi.com/graphs-everywhere-an-introduction-to-graph-ml-f0a3d5893cb8)
-
-[A Gentle Introduction to graph neural networks](https://distill.pub/2021/gnn-intro/)<br>
-
-[How to get started with GML](https://gordicaleksa.medium.com/how-to-get-started-with-graph-machine-learning-afa53f6f963a)<br>
-
-[AI Trends in 2023: Graph Neural Networks](https://www.assemblyai.com/blog/ai-trends-graph-neural-networks/)
-
-[Graph Neural Networks (GNNs) Study Guide GITHUB](https://github.com/dair-ai/GNNs-Recipe)<br>
-
-[awesome compilation, to go further with research](https://github.com/GRAND-Lab/Awesome-Graph-Neural-Networks)<br>
-[Demystifying Graph based Machine Learning](https://medium.com/mlearning-ai/demystifying-graph-based-machine-learning-ed6b6b7c4081)<br>
-
-[Neptune Graph neural networks](https://neptune.ai/blog/graph-neural-network-and-some-of-gnn-applications)
-
-## Cursos en Línea
-
-[Mandarin 2023](https://www.youtube.com/playlist?list=PLH-G21fz8AE1XgwfH5YPMealh6td1LMuh)<br>
-
-
-[Curso Completo  Graph neural Networks DeepFindR](https://www.youtube.com/watch?v=fOctJB4kVlM&list=PLV8yxwGOxvvoNkzPfCx2i8an--Tkt7O8Z)
-
-[Udemy Graph neural Networks](https://www.udemy.com/course/graph-neural-network/)<br>
-
-[mlabonne Github Course Graph neural networks](https://github.com/mlabonne/graph-neural-network-course)<br>
-
-[Geometric Deep Learning Michael Bronstein ](https://www.youtube.com/playlist?list=PLn2-dEmQeTfSLXW8yXP4q_Ii58wFdxb3C)<br>
-
-[Penn University Machine learning onGraphs](https://www.youtube.com/watch?v=90lWiGEHTn4&list=PL-BLJBpGQyLOBRhqEry2rsibv14hH5A2u)<br>
-
-
-[Machine leaning with Graphs 2024 Stanford](https://online.stanford.edu/courses/xcs224w-machine-learning-graphs)<br>
-
-[Jure Leskovec](https://www.youtube.com/watch?v=JAB_plj2rbA&list=PLoROMvodv4rPLKxIpqhjhPgdQy7imNkDn&index=2&t=2s)<br>
-
-[Mcgills Graph Representation Learning](https://cs.mcgill.ca/~wlh/comp766/)<br>
-
-
-
-## Videos
-
-
-[ Hamilton Representation Learning](https://www.youtube.com/watch?v=fbRDfhNrCwo&t=2197s)<br>
-
-[Excelente Video GNN Divulgativo](https://www.youtube.com/watch?v=GXhBEj1ZtE8)<br>
-
-[Int to graph machine learning Oracle](https://www.youtube.com/watch?v=ZdDwN1cUEck)<br>
-
-GNN for beginners:
 
 [Video 1](https://www.youtube.com/watch?v=YdGN-J322y4)
 [Video 2](https://www.youtube.com/watch?v=VDzrvhgyxsU&t=3145s)
