@@ -1,5 +1,7 @@
+Esta es una página destinada a ilustrar el uso de GitHub para mostrar ejemplos imoortantes de Graph machine learning.
+Este maerial hará parte del Libro Ciencia de redes.
 
-# Explanation 1
+# Ejemplo  1
 
 
 we show an example using a particular embedding algorithm known as Node to Vector (Node2Vec).
