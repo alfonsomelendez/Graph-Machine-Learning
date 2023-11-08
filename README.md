@@ -90,10 +90,8 @@ generated with the nx.watts_strogatz_graph(9,9,0.5091) command, while
 graph 4 is generated with nx.watts_strogatz_graph(10,5,0.5659).
 
 
-### Ejempo 2 Un sistema de recomendación de películas
+### Ejemplo 2 Un sistema de recomendación de películas
 
-
-# Recommender Systems using Node2Vec
 
 One of the most popular applications of GNNs is RecSys. If you think about the foundation of Word2Vec
 (and, thus, DeepWalk and Node2Vec), the goal is to produce vectors with the ability to measure their
