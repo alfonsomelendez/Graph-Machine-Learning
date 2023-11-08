@@ -40,7 +40,7 @@ calculate node embeddings. By contrast, EvolveGCN applies RNNs to the GCN parame
 As the name implies, the GCN evolves over time to produce relevant temporal node embeddings. The
 following figure illustrates a high-level view of this process.
 
-![](Figure5-1.PNG)
+![](./Imagenes/Figure5-1.PNG)
 
 This architecture has two variants:
 
@@ -59,7 +59,7 @@ links from the source page to the destination page. We want to predict the daily
 Wikipedia pages between March 16, 2019, and March 15, 2021, which results in 731 snapshots. Each
 snapshot is a graph describing the state of the system at a certain time.
 
-![](Figure5-2.PNG)
+![](./Imagenes/Figure5-2.PNG)
 
 
 PyTorch Geometric does not natively support static or dynamic graphs with a temporal signal.
@@ -73,7 +73,7 @@ pip install torch-geometric-temporal==0.54.0
 2. We import the WikiMaths dataset, called WikiMathDatasetLoader, a temporal-aware
 train-test split with temporal_signal_split, and our GNN layer, EvolveGCNH:
 
-![](Figure5-3.PNG)
+![](./Imagenes/Figure5-3.PNG)
 
 3. We load the WikiMaths dataset, which is a StaticGraphTemporalSignal object. In
 this object, dataset[0] describes the graph (also called a snapshot in this context) at = 0
@@ -82,7 +82,7 @@ training set is composed of snapshots from the earlier time periods, while the t
 snapshots from the later periods:
 
 
-![](Figure5-4.PNG)
+![](./Imagenes/Figure5-4.PNG)
 
 
 
@@ -92,7 +92,7 @@ in these tensors are different. It is difficult to visualize the values of each 
 better understand this dataset, we can calculate the mean and standard deviation values for each
 snapshot instead. The moving average is also helpful in smoothing out short-term fluctuations.
 
-![](Figure5-5.PNG)
+![](./Imagenes/Figure5-5.PNG)
 
 
 
@@ -100,14 +100,14 @@ snapshot instead. The moving average is also helpful in smoothing out short-term
 5. We plot these time series with matplotlib to visualize our task:
 
 
-![](Figure5-6.PNG)
-![](Figure5-65.PNG)
+![](./Imagenes/Figure5-6.PNG)
+![](./Imagenes/Figure5-65.PNG)
 
 
 
 This produces the following figure:
 
-![](Figure5-7.PNG)
+![](./Imagenes/Figure5-7.PNG)
 
 
 Our data presents periodic patterns that the temporal GNN can hopefully learn. We can now
@@ -116,24 +116,24 @@ implement it and see how it performs.
 the input dimension (dim_in). The GNN only has two layers: an EvolveGCN-H layer and a
 linear layer that outputs a predicted value for each node:
 
-![](Figure5-8.PNG)
+![](./Imagenes/Figure5-8.PNG)
 
 
 7. The forward() function applies both layers to the input with a ReLU activation function:
 
-![](Figure5-9.PNG)
+![](./Imagenes/Figure5-9.PNG)
 
 
 8. We create an instance of TemporalGNN and give it the number of nodes and input dimension
 9.  from the WikiMaths dataset. We will train it using the Adam optimizer:
 
 
-![](Figure5-10.PNG)
+![](./Imagenes/Figure5-10.PNG)
 
 
 9. We can print the model to observe the layers contained in EvolveGCNH:
 
-![](Figure5-11.PNG)
+![](./Imagenes/Figure5-11.PNG)
 
 We see three layers: TopKPooling, which summarizes the input matrix in eight columns;
 GRU, which updates the GCN weight matrix; and GCNConv, which produces the new node
@@ -142,23 +142,23 @@ embedding. Finally, a linear layer outputs a predicted value for every node in t
 10. We create a training loop that trains the model on every snapshot from the training set. The
 loss is backpropagated for every snapshot:
 
-![](Figure5-12.PNG)
+![](./Imagenes/Figure5-12.PNG)
 
 11. Likewise, we evaluate the model on the test set. The MSE is averaged on the entire test set to
 produce the final score:
 
-![](Figure5-13.PNG)
+![](./Imagenes/Figure5-13.PNG)
 
 
 12. We obtain a loss value of 0.7559. Next, we will plot the mean values predicted by our model on
 the previous graph to interpret it. The process is straightforward: we must average the predictions
 and store them in a list. Then, we can add them to the previous plot:
 
-![](Figure5-14.PNG)
+![](./Imagenes/Figure5-14.PNG)
 
 We obtain the following:
 
-![](Figure5-15.PNG)
+![](./Imagenes/Figure5-15.PNG)
 
 We can see that the predicted values follow the general trend in the data. This is an excellent
 result, considering the limited size of the dataset.
@@ -166,9 +166,9 @@ result, considering the limited size of the dataset.
 13. Finally, let’s create a scatter plot to show how predicted and ground truth values differ for a
 single snapshot:
 
-![](Figure5-16.PNG)
+![](./Imagenes/Figure5-16.PNG)
 
-![](Figure5-17.PNG)
+![](./Imagenes/Figure5-17.PNG)
 
 We observe a moderate positive correlation between predicted and real values. Our model is not
 remarkably accurate, but the previous figure showed that it understands the periodic nature of the
