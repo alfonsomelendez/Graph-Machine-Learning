@@ -3,7 +3,7 @@
 
 we show an example using a particular embedding algorithm known as Node to Vector (Node2Vec).
 
-![](Figure1.PNG)
+![](./Imagenes/Figure1.PNG)
 
 In the preceding code, we have done the following:
 1. We generated a barbell graph (described in the previous chapter).
