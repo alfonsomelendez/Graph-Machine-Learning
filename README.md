@@ -1,6 +1,6 @@
 # Graph Machine learning
 
- learning is a subset of artificial intelligence that aims to provide systems with the
+  is a subset of artificial intelligence that aims to provide systems with the
 ability to learn and improve from data. It has achieved impressive results in many different
 applications, especially where it is difficult or unfeasible to explicitly define rules to solve
 a specific task. For instance, we can train algorithms to recognize spam emails, translate
