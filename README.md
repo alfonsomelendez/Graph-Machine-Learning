@@ -194,7 +194,7 @@ on it to learn the node embeddings!
 
 
 
-## Ejemplo 3  Grafos Dinámcicos, predicción del Tráfiuco en la Web
+## Ejemplo 3  Grafos Dinámcicos, predicción del Tráfico en la Web
 
 
 
