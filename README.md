@@ -1,4 +1,4 @@
-Esta es una página destinada a ilustrar el uso de GitHub para mostrar ejemplos imoortantes de Graph machine learning.
+Esta es una página destinada a ilustrar el uso de GitHub para mostrar ejemplos importantes de Graph machine learning.
 Este maerial hará parte del Libro Ciencia de redes.
 
 > **Este material esta basado en el libro de Maxime Labonne, [Hands on Graph Neural networks Using Python](https://www.amazon.com/-/es/Maxime-Labonne-ebook/dp/B0BNNVZ3M2?ref_=ast_author_mpb), Packt Publishing**
